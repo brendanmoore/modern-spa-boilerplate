@@ -53,4 +53,8 @@ Running Webpack Development Server (requires Server to be running):
 ~/boilerplate $ npm run dev
 ```
 
+## Credits
+
+Chris Walker [@thechriswalker](https://github.com/thechriswalker);
+
 

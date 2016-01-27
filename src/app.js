@@ -1,4 +1,6 @@
-import __style from "./sass/style.scss";
+// This creates the CSS entrypoint for webpack.
+import "./sass/style.scss";
+// JS modules
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App.js";
