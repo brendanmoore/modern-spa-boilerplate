@@ -1,0 +1,5 @@
+**/.sass-cache/**
+**/.git/**
+**/src/sass/*
+**/src/components/*.scss
+**/node_modules/**

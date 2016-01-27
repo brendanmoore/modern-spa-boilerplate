@@ -1,0 +1,31 @@
+//Requires Shim to enable...
+// See Media Queries Level 4: http://drafts.csswg.org/mediaqueries/#hover
+// Currently shimmed by https://github.com/twbs/mq4-hover-shim
+$enable-hover-media-query:  false !default;
+
+//Font
+$font-size-root: 16px;
+$font-family-base: sans-serif;
+$font-size-base: 1rem;
+$line-height: 1.5 !default;
+
+$text-muted: #818a91 !default;
+
+//Body
+$body-color: #373a3c;
+$body-bg: #FFF;
+
+
+//Links
+$link-color: #0275d8;
+$link-hover-color: darken($link-color, 15%);
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
+
+//Other
+$abbr-border-color: #CCC;
+$dt-font-weight: 600;
+
+//Tables
+$table-bg: transparent !default;
+$table-cell-padding: .75rem !default;
