@@ -1,0 +1,26 @@
+@import "compass";
+@import "../sass/_variables";
+@import "../sass/_mixins";
+
+.btn {
+    background: $button-bg;
+    border: 1px solid $button-border;
+    color: $button-color;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    @include box-shadow($button-shadow);
+
+    &:hover {
+        background: $button-hover-bg;
+        border: 1px solid $button-hover-border;
+    }
+    &:active {
+        background: $button-active-bg;
+        border: 1px solid $button-active-border;
+    }
+    &:focus {
+        @include tab-focus();
+    }
+}

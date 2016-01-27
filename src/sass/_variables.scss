@@ -5,19 +5,19 @@ $enable-hover-media-query:  false !default;
 
 //Font
 $font-size-root: 16px;
-$font-family-base: sans-serif;
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-size-base: 1rem;
 $line-height: 1.5 !default;
 
 $text-muted: #818a91 !default;
 
 //Body
-$body-color: #373a3c;
-$body-bg: #FFF;
+$body-color: #4D606E;
+$body-bg: #F5F5F5;
 
 
 //Links
-$link-color: #0275d8;
+$link-color: #3FBAC2;
 $link-hover-color: darken($link-color, 15%);
 $link-decoration: none !default;
 $link-hover-decoration: underline !default;
@@ -29,3 +29,24 @@ $dt-font-weight: 600;
 //Tables
 $table-bg: transparent !default;
 $table-cell-padding: .75rem !default;
+
+// Header
+$header-bg: #4D606E;
+$header-color: $body-bg;
+$header-link: $link-color;
+
+// Buttons
+$button-bg: $link-color;
+$button-border: darken($link-color, 5%);
+$button-hover-bg: darken($link-color, 10%);
+$button-hover-border: darken($link-color, 15%);
+$button-active-bg: darken($link-color, 15%);
+$button-active-border: darken($link-color, 20%);
+$button-color: $body-bg;
+$button-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.075);
+
+// Nav
+$nav-bg: $body-bg;
+$nav-link: $link-color;
+$nav-hover-link-bg: rgba(#D3D4D8, 0.25);
+$nav-active-link-bg: rgba(#D3D4D8, 0.75);

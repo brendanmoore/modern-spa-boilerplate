@@ -57,4 +57,8 @@ Running Webpack Development Server (requires Server to be running):
 
 Chris Walker [@thechriswalker](https://github.com/thechriswalker);
 
+### Icon
+
+Egor Rumyantsev [piofivemusic](http://www.flaticon.com/packs/piofivemusic)
+
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchData } from "../actions";
+import Button from "./Button";
 
 class Data extends Component {
     render() {
@@ -11,7 +12,7 @@ class Data extends Component {
             <div>
                 <h2>Get Data: <small>Last updated: {lastUpdated}</small></h2>
                 <input type="text" ref={(input) => { this.input = input }} />
-                <button disabled={isFetching} onClick={onClick}>{buttonText}</button>
+                <Button disabled={isFetching} onClick={onClick}>{buttonText}</Button>
                 <pre>{JSON.stringify(data, null, "  ")}</pre>
             </div>
         )

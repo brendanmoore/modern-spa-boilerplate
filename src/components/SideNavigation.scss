@@ -1,0 +1,31 @@
+@import "../sass/_variables";
+
+.app-sidenav {
+    background-color: $nav-bg;
+    width: 200px;
+    padding-top: 32px;
+    > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.app-navitem {
+    display: block;
+    padding: 8px 16px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $nav-hover-link-bg;
+    }
+}
+
+.app-navitem-active {
+    background-color: $nav-active-link-bg;
+}

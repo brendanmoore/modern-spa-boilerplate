@@ -3,8 +3,9 @@ import React, { Component } from "react";
 export default class ErrorPage extends Component {
     render() {
         return (
-            <div className="error-page">
-                <h1>There has been an Error</h1>
+            <div>
+                <h1>Not Found!</h1>
+                <p>This is one of those 404s you've heard about</p>
             </div>
         )
     }
