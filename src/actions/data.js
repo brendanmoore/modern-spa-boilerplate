@@ -35,7 +35,9 @@ export function fetchData(resource) {
         dispatch(requestData(resource))
         return fetch(`/api/${resource}`)
             .then(req => req.json())
-            .then(json => dispatch(receiveData(resource, json)))
-            .catch(err => dispatch(receiveDataError(resource, err)))
+            .then(
+                json => dispatch(receiveData(resource, json)),
+                err => dispatch(receiveDataError(resource, err))
+            )
     }
 }
