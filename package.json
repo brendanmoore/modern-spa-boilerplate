@@ -1,7 +1,7 @@
 {
-  "name": "modern-spa-boilerplate",
+  "name": "wg-metrics",
   "version": "0.0.1",
-  "description": "A Boilerplate project for good web apps",
+  "description": "wg-metrics",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,6 +22,7 @@
     "babel-preset-stage-1": "^6.3.13",
     "babel-register": "^6.4.3",
     "body-parser": "^1.14.2",
+    "classnames": "^2.2.3",
     "compass-mixins": "^0.12.7",
     "compression": "^1.6.1",
     "cookie-parser": "^1.4.1",

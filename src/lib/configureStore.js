@@ -3,13 +3,13 @@ import thunkMiddleware from "redux-thunk";
 import createLogger from "redux-logger";
 import rootReducer from "../reducers";
 
-const loggerMiddleware = createLogger();
+const _blankMiddleWare = store => next => action => next(action);
+const loggerMiddleware = typeof window !== "undefined" ? createLogger() : _blankMiddleWare;
 
-const createStoreWithMiddleware = applyMiddleware(
-    thunkMiddleware,
-    loggerMiddleware
-)(createStore);
-
-export default function configureStore(initialState) {
+export default function configureStore(initialState, extraMiddleware = []) {
+    const middleware = [thunkMiddleware, loggerMiddleware].concat(extraMiddleware);
+    const createStoreWithMiddleware = applyMiddleware(
+        ...middleware
+    )(createStore);
     return createStoreWithMiddleware(rootReducer, initialState)
 }

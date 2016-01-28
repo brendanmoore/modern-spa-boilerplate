@@ -45,8 +45,13 @@ $button-active-border: darken($link-color, 20%);
 $button-color: $body-bg;
 $button-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.075);
 
+
 // Nav
 $nav-bg: $body-bg;
 $nav-link: $link-color;
-$nav-hover-link-bg: rgba(#D3D4D8, 0.25);
-$nav-active-link-bg: rgba(#D3D4D8, 0.75);
+$nav-hover-link-bg: rgba(0,0,0, 0.025);
+$nav-active-link-bg: rgba(0,0,0, 0.075);
+
+// Inputs
+$input-border: rgba(#3A4750, 0.5);
+$input-focus-border: $button-border;

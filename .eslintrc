@@ -25,3 +25,4 @@ rules:
     quotes: [2, double, avoid-escape]
     space-after-keywords: 2
     space-before-blocks: 2
+    react/jsx-uses-react: 2

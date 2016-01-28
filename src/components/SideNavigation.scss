@@ -14,6 +14,7 @@
 .app-navitem {
     display: block;
     padding: 8px 16px;
+    padding-left: 32px;
 
     &:hover,
     &:active,
@@ -27,5 +28,7 @@
 }
 
 .app-navitem-active {
-    background-color: $nav-active-link-bg;
+    &, &:hover {
+        background-color: $nav-active-link-bg;
+    }
 }

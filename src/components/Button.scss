@@ -4,23 +4,44 @@
 
 .btn {
     background: $button-bg;
-    border: 1px solid $button-border;
+    border: 2px solid $button-border;
     color: $button-color;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 6px 12px;
-    @include box-shadow($button-shadow);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0,0,0, 0.075);
+    padding: 6px 24px;
 
     &:hover {
         background: $button-hover-bg;
-        border: 1px solid $button-hover-border;
+        border-color: $button-hover-border;
     }
     &:active {
         background: $button-active-bg;
-        border: 1px solid $button-active-border;
+        border-color: $button-active-border;
     }
     &:focus {
         @include tab-focus();
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-header {
+    background-color: transparent;
+    border-color: $body-bg;
+    color: $body-bg;
+
+    &:hover, &:active {
+        background-color: transparent;
+        border-color: $button-border;
+        color: $button-bg;
+    }
+    &:focus {
+        outline: none;
+        border-color: $button-border;
+        color: $button-bg;
     }
 }

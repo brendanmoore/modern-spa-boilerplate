@@ -3,17 +3,16 @@
 // together by webpack into the `style.css`
 import "./Header.scss";
 import React, { Component } from "react";
+import LogInOut from "./LogInOut";
 
 export default class Header extends Component {
     render() {
         return (
             <header className="app-header">
-                <div className="app-logo">
-                    <img src="/img/boilerplate-logo.svg" width="50" height="50" />
+                <h2 className="app-title">App Title</h2>
+                <div className="app-header-auth">
+                    <LogInOut />
                 </div>
-                <h2 className="app-title">
-                    App Title!
-                </h2>
             </header>
         );
     }

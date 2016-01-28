@@ -1,7 +1,6 @@
 @import "compass";
 .container {
     @include display-flex();
-    margin: 0 32px;
 
     > div:not([class]) {
         padding: 32px;

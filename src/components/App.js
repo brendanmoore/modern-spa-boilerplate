@@ -1,12 +1,7 @@
-import React, { Component } from "react";
-import { Router, browserHistory } from "react-router";
-import routes from "./routes";
+import React from "react";
 
-
-export default class App extends Component {
-    render() {
-        return (
-            <Router history={browserHistory} routes={routes} />
-        );
-    }
+export default function App ({ children }) {
+    return (
+        <div className="app">{ children }</div>
+    );
 }

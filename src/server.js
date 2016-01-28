@@ -11,8 +11,7 @@ import api from "./api";
 // View Modules.
 import React from "react";
 import { renderToString } from "react-dom/server";
-import reducers from "./reducers";
-import { createStore } from "redux";
+import configureStore from "./lib/configureStore";
 import { Provider } from "react-redux";
 import { match, RouterContext } from "react-router";
 import routes from "./components/routes";
@@ -63,14 +62,12 @@ app.use(express.static(STATIC_PATH, {
 app.get("*", (req, res) => {
 
     // A Dummy initial state.
-    const initialState = {
-        testString: `This is a BACKEND String! ${Date.now()}`
-    };
-    // A simple store, no middleware is required.
-    const store = createStore(reducers, initialState);
+    const initialState = {};
+    // Set up store
+    const store = configureStore(initialState);
     // Using the [match, RouterContext] instead of [Router] because it requires
     // a browser.
-    match({ routes, location: req.url }, (err, redirect, props) => {
+    match({ routes: routes(store), location: req.url }, (err, redirect, props) => {
         if (err) {
             // Something must have crashed here?
             res.send(500).send(err.message);
