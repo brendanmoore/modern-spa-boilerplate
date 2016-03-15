@@ -35,7 +35,7 @@ export default function auth(state = {
         case LOGIN_FAILURE:
             return Object.assign({}, state, {
                 loggingIn: false,
-                loggedIn: true,
+                loggedIn: false,
                 error: action.error
             });
         default:
